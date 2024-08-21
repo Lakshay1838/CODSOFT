@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+.logo img{
+    width: 10%;
+    filter: brightness(0) invert(1);   
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    margin: 0px 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.search-bar input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
