@@ -8,6 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
+/* HEADER */
 header{
     display: flex;
     justify-content: space-between;
@@ -16,8 +17,11 @@ header{
     background-color: #333;
     color: white;
 }
+.logo{
+    width: 100px;
+}
 .logo img{
-    width: 10%;
+    width: 60%;
     filter: brightness(0) invert(1);   
 }
 nav ul{
@@ -36,3 +40,187 @@ nav ul li a{
     border: none;
     border-radius: 5px;
 }
+/* HERO-SECTION */
+.hero{
+    height: 70vh;
+    /* background-color: black; */
+    opacity: 0.7;
+    background: url('/images/hero-bg.jpeg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.cta-button{
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+.cta-button:hover{
+    background-color: #e64a19;
+}
+/* FEATURES */
+.features{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    /* background-color: #f4f4f4; */
+}
+.feature{
+    /* flex: 1; */
+    margin: 0 20px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+    text-align: center;
+}
+.feature h2{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.feature p{
+    font-size: 1rem;
+    color: #666;
+}
+/* media query */
+@media (max-width:768px){
+    .features{
+        flex-direction: column;
+    }
+    .feature{
+        margin-bottom: 20px;
+    }
+
+}
+/* about section  */
+.about{
+    padding: 50px 20px;
+    /* background-color: #fff; */
+    text-align: center;
+}
+.about-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.about p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+/* testimonials revews */
+.testimonials{
+    padding: 50px 20px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+.testimonials h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.testimonial{
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-style: italic;
+}
+.testimonial p{
+    margin-bottom: 10px;
+}
+.testimonial p:last-child{
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+@media (max-width:768px){
+    .testimonials .testimonial{
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        margin-bottom: 0;
+    }
+    .testimonials .testimonial:last-child{
+        margin-right: 0;
+    }
+}
+/* call to action */
+/* .cta{
+    padding: 30px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} Self styled*/
+ .cta{
+    padding: 50px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+ }
+.cta h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.cta p{
+    font-size: 1.2rem;
+    margin-bottom: 27px;
+}
+/* BUTTON ALREADY STYLED */
+/* .cta button:hover{
+
+} */
+.cta-button {
+    padding: 15px 30px;
+    background-color: white;
+    color: #ff5722;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    color: white;
+    background-color: #e64a19;
+}
+/* footer */
+/* footer{
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-section{
+    flex-direction: 1;
+    margin-bottom: 15px;
+}
+.footer-section p, .footer-section ul {
+    font-size: 1em;
+    line-height: 1.6;
+} */
