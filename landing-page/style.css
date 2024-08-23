@@ -6,7 +6,19 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    color: #333;
     line-height: 1.6;
+    background-color: transparent;
+}
+h1, h2 ,h3{
+    color: #ff5722;
+}
+a{
+    color: #ff5722;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 /* HEADER */
 header{
@@ -34,6 +46,8 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .search-bar input{
     padding: 5px;
@@ -205,8 +219,8 @@ nav ul li a{
     background-color: #e64a19;
 }
 /* footer */
-/* footer{
-    padding: 50px 20px;
+footer{
+    padding: 30px 20px;
     text-align: left;
     background-color: #333;
     color: white;
@@ -217,10 +231,61 @@ nav ul li a{
     margin-bottom: 20px;
 }
 .footer-section{
-    flex-direction: 1;
     margin-bottom: 15px;
+    max-width: 500px;
+    padding: 10px 30px;
+}
+.footer-section h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.footer-section div{
+    display: inline-block;
+}
+.footer-section div ul li{
+    list-style-type: none;
+}
+.footer-section div ul li{
+    filter: brightness(0) invert(1);
 }
 .footer-section p, .footer-section ul {
     font-size: 1em;
     line-height: 1.6;
-} */
+}
+.footer-section ul{
+    list-style-type: none;
+}
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+.footer-section ul li a{
+    color: white;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+ @media (max-width:518px){
+    .hero{
+        padding: 100px 10px;
+    }
+    .features,.about,.testimonials,.cta,.footer-content{
+        padding: 20px;
+    }
+    .feature, .testimonial, .cta-button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+ }
