@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calculator{
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+}
+button{
+    border-radius: 5px;
+}
+.inputEquation{
+    border-color: black;
+    margin-bottom: 10px;
+}
+.inputEquation input{
+    padding: 12px 30px;
+}
+.buttonsDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* margin: 10px; */
+}
+.buttonsDiv div{
+    margin: 5px;
+}
+.buttonsDiv button{
+    font-size: 25px;
+    padding: 13px;
+}
+.numButtons button{
+    padding: 13px 18px;
+}
