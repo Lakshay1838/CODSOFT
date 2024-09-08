@@ -8,36 +8,39 @@
 </head>
 <body>
     <header>
-        <h1>Calculator</h1>
+        <h1>Calculator</h1>       
     </header>
+    <div class="randomText">
+        <div>see the latest calculator for basic calculations </div>
+    </div>
     <div class="calculator">
         <div class="inputEquation">
-            <input type="text">
+            <input type="text" id="inputString">
         </div>
         <div class="buttonsDiv">
             <div>
-                <button>C</button>
-                <button>DEL</button>
-                <button>=</button>
-                <button>/</button>
+                <button onclick="clearString()">C</button>
+                <button onclick="deleteLastElement()">DEL</button>
+                <button onclick="addToString('/')">/</button>
+                <button onclick="addToString('*')">*</button>
             </div>
             <div class="numButtons">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>*</button>
+                <button onclick="addToString('1')">1</button>
+                <button onclick="addToString('2')">2</button>
+                <button onclick="addToString('3')">3</button>
+                <button onclick="addToString('-')">-</button>
             </div>
             <div class="numButtons">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
+                <button onclick="addToString('4')">4</button>
+                <button onclick="addToString('5')">5</button>
+                <button onclick="addToString('6')">6</button>
+                <button onclick="addToString('+')">+</button>
             </div>
             <div class="numButtons">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>-</button>
+                <button onclick="addToString('7')">7</button>
+                <button onclick="addToString('8')">8</button>
+                <button onclick="addToString('9')">9</button>
+                <button onclick="displayResult()">=</button>
             </div>
         </div>
     </div>
